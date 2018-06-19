@@ -8,7 +8,8 @@
   "dependencies": {
     "jquery": "^2.2.4",
     "normalize.css": "^4.1.1",
-    "postcss-import": "^11.1.0"
+    "postcss-import": "^11.1.0",
+    "waypoints": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
