@@ -8,9 +8,15 @@
   &--expanded {
     background-color: rgba($mainBlue, 0.5);
   }
+  
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, 0.3);
+
+    &--dark{
+      background-color: rgba(23,51,72, 0.8);
+    }
   }
 
   &__btn-container {
@@ -26,10 +32,16 @@
     left: 50%;
     transform-origin: 50% 0%;
     transform: translateX(-50%) scale(0.8);
+    transition : all .5s ease-in;
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
+
+      .site-header--dark &{
+        transform: scale(.57);
+      }
+
     }
 
     &__graphic {
